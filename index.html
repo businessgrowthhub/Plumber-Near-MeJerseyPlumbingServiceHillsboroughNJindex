@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plumber Near Me | Jersey Plumbing Service | Hillsborough, NJ</title>
+  <meta name="description" content="Looking for a top-rated Plumber Near Me? Jersey Plumbing Service provides expert licensed plumbing, drain cleaning, water heater repair, and 24/7 emergency services in Hillsborough, NJ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0F4C81;
+      --secondary: #E63946;
+      --dark: #1D3557;
+      --light: #F8F9FA;
+      --white: #FFFFFF;
+      --gray: #6C757D;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; color: #333; background-color: var(--light); line-height: 1.6; }
+    h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    
+    /* Header */
+    header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+    .header-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+    .logo { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.2rem; color: var(--primary); }
+    .logo img { height: 50px; border-radius: 4px; object-fit: contain; }
+    nav { display: flex; align-items: center; gap: 15px; }
+    nav a { color: var(--dark); font-weight: 600; font-size: 0.95rem; }
+    nav a:hover { color: var(--secondary); }
+    .btn-call { background-color: var(--secondary); color: var(--white) !important; padding: 10px 20px; border-radius: 5px; font-weight: 700; text-decoration: none !important; transition: background 0.3s; display: inline-block; }
+    .btn-call:hover { background-color: #C1121F; }
+
+    /* Hero Section */
+    .hero { background: linear-gradient(rgba(15, 76, 129, 0.88), rgba(29, 53, 87, 0.88)), url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgctQ3LQnpl35xhSuilojZ1BsSpj7SRIVWvbwMYds648XB_7bPX3WwDL0Yx55LtXI7N3RUeQPTHQ7P_LwLujpzaUnFbnlPmpby30GmLtjwhzchOitMAzlo7mOfaIMI-vE7JU2meW2AqmFXWiZ8cTaWpKnSfjtpNqLCy9A9FYYpirwJgz9j_bqM9MfDY4w/s1920/Licensed%20Plumber%20Hillsborough,%20NJ.jpg') center/cover no-repeat; color: var(--white); padding: 5rem 2rem; text-align: center; }
+    .hero-content { max-width: 850px; margin: 0 auto; }
+    .hero h1 { font-size: 2.4rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+    .hero p { font-size: 1.15rem; margin-bottom: 2rem; }
+
+    /* General Sections */
+    section { padding: 4rem 2rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-title { text-align: center; font-size: 2rem; color: var(--primary); margin-bottom: 2rem; position: relative; }
+    .section-title::after { content: ''; display: block; width: 60px; height: 3px; background: var(--secondary); margin: 10px auto 0; }
+
+    /* About Us */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+    .about-img img { width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
+
+    /* Services */
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .service-card { background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--secondary); }
+    .service-card h3 { color: var(--primary); margin-bottom: 0.75rem; }
+
+    /* Interactive Estimator */
+    .estimator-bg { background: #EBF3FA; }
+    .estimator-box { background: var(--white); padding: 2rem; border-radius: 8px; max-width: 600px; margin: 0 auto; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+    .form-group { margin-bottom: 1.25rem; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--primary); }
+    .form-group select, .form-group input, .form-group textarea { width: 100%; padding: 0.75rem; border: 1px solid #D1D5DB; border-radius: 5px; font-family: inherit; font-size: 1rem; }
+    .estimate-result { margin-top: 1.5rem; padding: 1rem; background: #E3F2FD; border: 1px solid #2196F3; border-radius: 5px; text-align: center; font-weight: 700; color: #0D47A1; display: none; }
+
+    /* Why Choose Us */
+    .why-bg { background: var(--white); }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; }
+    .why-item { background: var(--light); padding: 1.5rem; border-radius: 6px; }
+    .why-item h4 { color: var(--primary); margin-bottom: 0.5rem; font-size: 1.1rem; }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 1.5rem; }
+    .faq-item { background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .faq-item h3 { color: var(--primary); font-size: 1.1rem; margin-bottom: 0.5rem; }
+
+    /* Contact & Map */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .contact-info ul { list-style: none; margin: 1.5rem 0; }
+    .contact-info li { margin-bottom: 1rem; font-size: 1.05rem; }
+    .contact-info strong { color: var(--primary); }
+    .map-container iframe { width: 100%; height: 280px; border-radius: 8px; border: 0; margin-top: 1rem; }
+    .contact-form { background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+
+    /* Keywords Footer Cloud */
+    .keywords-section { background: #E5E7EB; padding: 2rem; text-align: center; }
+    .keywords-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; list-style: none; margin-top: 1rem; }
+    .keywords-list li { background: var(--white); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; color: #333; border: 1px solid #D1D5DB; }
+
+    /* Footer */
+    footer { background: var(--dark); color: var(--white); text-align: center; padding: 1.5rem; }
+    
+    @media (max-width: 768px) {
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .header-container { flex-direction: column; gap: 1rem; }
+      nav { flex-wrap: wrap; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVbx5a4c29e2DGr5TdugObO8x4zYSw3Rn5HTuUsINQ3J9mKskUTKMPGH8dREOEaV1nYdHah7dijejxFMutR2Joa_8TSkye2Fg3_JLvJnB17bGucmMrQlDcIx_288_F180bgJaO_TM0j73RMCrt1iTeDj2rs37JNi2a2nX9_eQrlwNVydgol7kfFm7DAg/s1431/Jersey%20Plumbing%20Service.webp" alt="Jersey Plumbing Service Logo">
+        <span>Jersey Plumbing Service</span>
+      </a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#estimate">Estimator</a>
+        <a href="#why">Why Us</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="tel:9082817101" class="btn-call">Call (908) 281-7101</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>#1 Premier Plumber Near Me in Hillsborough, NJ</h1>
+        <p>Reliable, top-rated local plumbing solutions including emergency repairs, drain cleaning, water heater installation, and sump pump setups available 24/7.</p>
+        <a href="#contact" class="btn-call">Schedule Service Now</a>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Jersey Plumbing Service</h2>
+        <div class="about-grid">
+          <div>
+            <p>Searching for a trustworthy <strong>Plumber Near Me</strong>? <strong>Jersey Plumbing Service</strong> is your dedicated local plumbing expert serving residential and commercial properties throughout Hillsborough, NJ.</p>
+            <p>When you hire a <strong>Licensed Plumber Hillsborough, NJ</strong> from our team, you get prompt response times, precise diagnosis, transparent pricing, and master-level workmanship across all <strong>Plumbing And Heating Hillsborough, NJ</strong> projects.</p>
+          </div>
+          <div class="about-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgctQ3LQnpl35xhSuilojZ1BsSpj7SRIVWvbwMYds648XB_7bPX3WwDL0Yx55LtXI7N3RUeQPTHQ7P_LwLujpzaUnFbnlPmpby30GmLtjwhzchOitMAzlo7mOfaIMI-vE7JU2meW2AqmFXWiZ8cTaWpKnSfjtpNqLCy9A9FYYpirwJgz9j_bqM9MfDY4w/s1920/Licensed%20Plumber%20Hillsborough,%20NJ.jpg" alt="Licensed Plumber Hillsborough, NJ">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Drain Cleaning Hillsborough, NJ</h3>
+            <p>Advanced high-pressure hydro-jetting and rooter clearing to quickly unclog stubborn sinks, toilets, and main sewer lines.</p>
+          </div>
+          <div class="service-card">
+            <h3>Water Heater Repair & Installation</h3>
+            <p>Expert maintenance, heating element replacement, and high-efficiency tankless or traditional <strong>Water Heater Installation Hillsborough, NJ</strong>.</p>
+          </div>
+          <div class="service-card">
+            <h3>24 Hour & Emergency Plumber</h3>
+            <p>Burst pipes or sewage backups? Our fast-response <strong>Emergency Plumber Hillsborough, NJ</strong> team is ready around the clock.</p>
+          </div>
+          <div class="service-card">
+            <h3>Leak Detection & Sump Pump Installation</h3>
+            <p>Non-invasive electronic leak detection combined with heavy-duty <strong>Sump Pump Installation Hillsborough, NJ</strong> to keep basements safe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Estimator -->
+    <section id="estimate" class="estimator-bg">
+      <div class="container">
+        <h2 class="section-title">Plumbing Cost Estimator</h2>
+        <div class="estimator-box">
+          <form id="calcForm" onsubmit="event.preventDefault(); calculateEstimate();">
+            <div class="form-group">
+              <label for="serviceType">Select Plumbing Service:</label>
+              <select id="serviceType" required>
+                <option value="175">Drain Cleaning / Unclogging</option>
+                <option value="250">Leak Detection & Minor Pipe Repair</option>
+                <option value="450">Sump Pump Repair / Installation Base</option>
+                <option value="1200">Water Heater Repair / Replacement Estimate</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="urgency">Select Urgency Level:</label>
+              <select id="urgency" required>
+                <option value="1">Standard Appointment</option>
+                <option value="1.3">Emergency / Same-Day Service (+30%)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-call" style="width: 100%; border: none; cursor: pointer;">Calculate Estimate</button>
+          </form>
+          <div id="estimateResult" class="estimate-result"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why" class="why-bg">
+      <div class="container">
+        <h2 class="section-title">Why Choose Jersey Plumbing Service?</h2>
+        <div class="why-grid">
+          <div class="why-item">
+            <h4>Fully Licensed & Insured</h4>
+            <p>Our work is carried out by a fully certified, background-checked <strong>Licensed Plumber Hillsborough, NJ</strong>.</p>
+          </div>
+          <div class="why-item">
+            <h4>24/7 Emergency Response</h4>
+            <p>We are a true <strong>24 Hour Plumber Hillsborough, NJ</strong> ready to handle midnight leaks and plumbing disasters.</p>
+          </div>
+          <div class="why-item">
+            <h4>Upfront & Transparent Pricing</h4>
+            <p>No surprise fees. You get clear, honest cost estimates before any plumbing or heating work begins.</p>
+          </div>
+          <div class="why-item">
+            <h4>State-of-the-Art Equipment</h4>
+            <p>We use precision thermal <strong>Leak Detection Hillsborough, NJ</strong> and modern camera sewer inspection tools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>1. How do I quickly find an experienced Plumber Near Me in Hillsborough, NJ?</h3>
+            <p>Jersey Plumbing Service provides immediate dispatch for all residential and commercial needs. Calling our team connects you with a top-rated <strong>Licensed Plumber Hillsborough, NJ</strong> right away.</p>
+          </div>
+          <div class="faq-item">
+            <h3>2. What should I do if my water heater stops producing hot water?</h3>
+            <p>Contact us for fast <strong>Water Heater Repair Hillsborough, NJ</strong>. We diagnose heating elements, thermostats, and flush sediment, or guide you through a modern <strong>Water Heater Installation Hillsborough, NJ</strong>.</p>
+          </div>
+          <div class="faq-item">
+            <h3>3. Do you provide 24/7 response for plumbing emergencies?</h3>
+            <p>Yes, as a reliable <strong>24 Hour Plumber Hillsborough, NJ</strong>, our emergency unit quickly arrives to manage active pipe leaks, sewer backups, and urgent <strong>Emergency Plumber Hillsborough, NJ</strong> situations.</p>
+          </div>
+          <div class="faq-item">
+            <h3>4. How can I prevent basement flooding during heavy rain?</h3>
+            <p>We recommend professional <strong>Sump Pump Installation Hillsborough, NJ</strong> along with routine testing to ensure your pump functions flawlessly during storms.</p>
+          </div>
+          <div class="faq-item">
+            <h3>5. How do you handle hidden water leaks behind walls or floors?</h3>
+            <p>We utilize specialized <strong>Leak Detection Hillsborough, NJ</strong> technology to pinpoint exact leak locations without tearing apart unnecessary areas of your home.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Information</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>Contact Jersey Plumbing Service today for reliable plumbing, heating, and emergency repair services!</p>
+            <ul>
+              <li><strong>Business Name:</strong> Jersey Plumbing Service</li>
+              <li><strong>Address:</strong> PO Box 7371 Hillsborough, NJ 08844</li>
+              <li><strong>Phone:</strong> <a href="tel:9082817101">(908) 281-7101</a></li>
+              <li><strong>Email:</strong> <a href="mailto:info@jerseyplumbing.com">info@jerseyplumbing.com</a></li>
+              <li><strong>Website:</strong> <a href="http://jerseyplumbing.com/" target="_blank" rel="noopener">http://jerseyplumbing.com/</a></li>
+              <li><strong>GMB Profile:</strong> <a href="https://maps.app.goo.gl/QrzfvgujCZS4fUJA9" target="_blank" rel="noopener">Google Business Link</a></li>
+            </ul>
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d774718.1672518587!2d-74.69939344999999!3d40.668617999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3bc5160255555%3A0x104535606d0081e3!2sJersey%20Plumbing%20Service!5e0!3m2!1sen!2s!4v1790946152044!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h3 style="color: var(--primary); margin-bottom: 1rem;">Request Plumbing Service</h3>
+            <form onsubmit="event.preventDefault(); alert('Thank you for contacting Jersey Plumbing Service! We will reach out to you immediately.'); this.reset();">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required placeholder="(908) 000-0000">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required placeholder="john@example.com">
+              </div>
+              <div class="form-group">
+                <label for="message">Describe Your Issue</label>
+                <textarea id="message" rows="4" placeholder="How can our plumbers help you today?" required></textarea>
+              </div>
+              <button type="submit" class="btn-call" style="width: 100%; border: none; cursor: pointer;">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keywords Tag Cloud -->
+    <section class="keywords-section">
+      <div class="container">
+        <h3>Related Searches</h3>
+        <ul class="keywords-list">
+          <li>Plumber Near Me</li>
+          <li>Licensed Plumber Hillsborough, NJ</li>
+          <li>Drain Cleaning Hillsborough, NJ</li>
+          <li>Plumbing And Heating Hillsborough, NJ</li>
+          <li>Sump Pump Installation Hillsborough, NJ</li>
+          <li>Emergency Plumber Hillsborough, NJ</li>
+          <li>Water Heater Installation Hillsborough, NJ</li>
+          <li>24 Hour Plumber Hillsborough, NJ</li>
+          <li>Water Heater Repair Hillsborough, NJ</li>
+          <li>Leak Detection Hillsborough, NJ</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; Jersey Plumbing Service — All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Estimator Script -->
+  <script>
+    function calculateEstimate() {
+      const baseCost = parseFloat(document.getElementById('serviceType').value);
+      const urgencyMultiplier = parseFloat(document.getElementById('urgency').value);
+      
+      if (!isNaN(baseCost) && !isNaN(urgencyMultiplier)) {
+        const total = Math.round(baseCost * urgencyMultiplier);
+        const resultDiv = document.getElementById('estimateResult');
+        resultDiv.style.display = 'block';
+        resultDiv.innerHTML = 'Estimated Project Cost Range: $' + Math.round(total * 0.9) + ' - $' + Math.round(total * 1.2) + '*<br><small style="font-weight: normal; color: #555;">*Estimated range. An exact quote will be provided on-site after physical inspection.</small>';
+      }
+    }
+  </script>
+
+</body>
+</html>
